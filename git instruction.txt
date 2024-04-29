@@ -1,0 +1,23 @@
+git init  გით რეპოზიტორიასთან დაკავშირება
+
+git add .  ყველაფერი შეცვლილის დამატება
+
+git commit -m "Blablabla"  ცვლიბების დაკომენტარება
+
+git push  ცვილებების ატანა რეპოზიტორიაზე
+
+git branch -M main  მთავარი ბრენჩის შექმნა
+git remote add git@github.com:GegaJikuridze/test.git  ლინკის მინიჭება / ანუ მეინ ბრენჩის დაკავშირება რეპოზიტორიასთან
+git push -u origin main  ცვლილებების ატანა გითზე
+git checkout -b name  ბრენჩის შექმნა 
+git checkout branchName კონკრეტულ ბრენჩზე გადასვლა
+git branch ამოწმებს რომელ ბრენჩზე დგახართ
+git push -u origin  ახალი ბრენჩის ცვლილებბის ატვირთვა
+git branch -d branch name  ბრენჩის წაშლა
+git pull   ჩამოტვირთვა ნებისმიერი ცვლილების 
+git status გვიჩვენებს რა სიტუაციაა ჩვენს ბრენჩზე
+
+
+ls -al ~/.ssh ემოწმება მაქვს თუ არა სსH კიი გაწერილი ( id ersa და id eresa public)
+ ssh-keygen -C "dejavuhits@gmail.com" ssh კოდის დაგენერირება 
+ 

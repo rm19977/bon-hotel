@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* chamoscrolvis silamaze */
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 55px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.header-flex img {
+    width: 150px;
+    height: 100px;
+}
+
+.nav-link {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 28px;
+     color: #957554;
+     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+.navigation {
+    display: flex;
+    gap: 50px;
+}
+
+.first-section {
+    background-image: url(../asetss/images/welcam.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.first-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.main-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 92px;
+    color: #ffffff; 
+}
+
+.description,
+.botton,
+.footer-nav-links,
+.footer-text a,
+.footer-text p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.botton{
+    text-decoration: none;
+    background-color: #DFAA5B;
+    padding: 25px 133px;
+    border-radius: 10px;
+}
+
+.secondary-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.rooms-card {
+    width: 550px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rooms-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards-content {
+    position: absolute;
+    left: 30%;
+    bottom: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+}
+
+.card-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 46px;
+    color: #ffffff;
+}
+
+.botton.botton-small {
+    padding: 24px 52px 24px 56px;
+}    
+
+.overlay {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.48%,#000000 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.rooms-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.rooms-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section {
+    margin-bottom: 122px;
+}
+
+                /* footer  */
+
+footer {
+    background: #111111;
+    padding: 51px 0 159px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-nav-links {  /* ბოთონ და დესქრიფშენის ფონტებია ასევე გაწერილი */
+    font-size: 400;
+    text-decoration: none;
+}
+
+.footer-nav-links:hover,
+.footer-text a:hover {
+    color: #DFAA5B;
+}
+
+/* ფუთერის ა და პ თეგების ფონტები გავსტილე  დესქრიფშენტან ერთად */
+
+.footer-text a {
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-content img {
+    width: 154px;
+    height: 126px;
+    object-fit: cover;
+}
+
+/* index.html ის გასტილვას ვერ ვახერხებ რადგან სიესესის დაკავშირება ვერ მოვახერხე
+ამიტომ შევქმენი ახალი ტესტ სიესესი და ახალად დავუკავშირე ნივს ფეიჯს */
+
+               /*ვიწყებთ ნივს ფეიჯის გასტილვას */
+
+               .news-card {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                grid-template-rows: 500px;
+                margin-bottom: 50px;
+            }      
+            
+            .news-card img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            
+            .news-card-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 44px;
+            }
+            
+            .news-card-content h3 {
+                 color: #957554;
+            }
+            
+            .news-card-content p {
+                color: #000;
+            }
+            
+            .news-card:nth-child(2n) img {
+                order: 1;
+            }
+            
+            .news-card:nth-child(2n) .news-card-content {
+                align-items: end;
+            }
+            
+            .news-card:nth-child(2n) .news-card-content p {
+                text-align: right;
+            }
+            
+            .news-list {
+                margin-bottom: 107px;
+            }
+            
+            
+                            /* გალერიიის გასტილვა */
+            
+            .news-galery {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 500px);
+                gap: 30px;
+                margin-bottom: 104px;
+            }
+            
+            .news-galery img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+.news-galery img:first-child {
+    grid-area: 1/1/2/4;
+}
+
+.news-galery img:nth-child(2) {
+    grid-area: 1/4/2/6;
+}
+
+.news-galery img:nth-child(3) {
+    grid-area: 2/1/3/3;
+}
+
+.news-galery img:nth-child(4) {
+    grid-area: 2/3/3/6;
+}
+
+/*დელუქს რუმი და სტანდარტ რუმის ცალკეული გასტილვა რომ მარჯვენა მხარე დაიჭიროს ასევე ბოთომებიც */
